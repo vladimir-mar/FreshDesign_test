@@ -1,0 +1,251 @@
+@import "/static/css/normalize.css";
+html {	
+	@media (min-width: 1200px) {
+		height: 100%;
+	}
+}
+body {
+	background-color: #161f30;
+	@media (min-width: 1200px) {
+		height: 100%;
+		overflow: hidden;
+	}
+}
+.main-wrapper {
+	margin: 0 20px;
+	@media (min-width: 1200px) {
+		min-height: 100%;
+		position: relative;
+		width: 1180px;
+		margin: 0 auto;
+	}
+}
+.main-footer {
+	padding-top: 97px;
+	@media (min-width: 1200px) {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+	}
+}
+.text-box {
+	padding-top: 3px;
+	@media (min-width: 1200px) {
+		width: 380px;
+		float: left;
+	}
+	&__cont {
+		padding-top: 19px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		letter-spacing: .3px;
+		color: #fff;
+		p {
+			margin: 0;
+		}
+	}
+}
+.foot-panel {
+	margin-top: 40px;
+	@media (min-width: 1200px) {
+		margin-top: 0;
+		width: 730px;
+		float: right;
+	}
+}
+.menu-section {
+	display: flex;
+	&__item {
+		&_box-1 {
+			flex: 2;
+		}
+		&_box-2 {
+			flex: 1.1;	
+		}
+		&_box-3 {
+			flex: .8;
+		}
+	}
+	@media (min-width: 768px) {
+		&__item {
+			&_box-1 {
+				flex: 1.6;
+			}
+			&_box-2 {
+				flex: 1;	
+			}
+			&_box-3 {
+				flex: 1;
+			}
+		}	
+	}
+	@media (min-width: 1200px) {
+		&__item {
+			&_box-2 {
+				flex: 1.12;	
+			}
+			&_box-3 {
+				flex: .83;
+			}
+		}	
+	}
+}
+.simple-menu {
+	&__title {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: normal;
+		letter-spacing: .7px;
+		text-transform: uppercase;
+		color: #fff;
+		margin: 0 0 30px 0;
+	}
+	&__list {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		&__item {
+			padding-bottom: 17px; 
+			&__link {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 24px;
+				letter-spacing: .4px;
+				text-decoration: none;
+				color: #fff;
+				&:hover {
+					opacity: .8;
+				}
+			}
+		}
+
+	}
+}
+.info-section {
+	background-color: #5c7087;
+	margin-top: 30px;
+	@media (min-width: 1200px) {
+		width: 9999px;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		@media (min-width: 768px) {
+			width: 730px;
+			height: 90px;
+			flex-direction: row;
+		}
+		&__item {
+			&_network {
+				flex: .9;
+			}
+			&_phone {
+				flex: 1.086;
+			}
+			&_email {
+				flex: 1.014;
+			}
+		}
+	}
+}
+.network-set {
+	list-style-type: none;
+	margin: 0 0 0 10px;
+	padding: 0;
+	&__item {
+		float:  left;
+		margin: 25px 0 0 20px;	
+		&__link {
+			display: block;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: #fff;
+			&__icon {
+				display: block;
+				float: left;
+				width: 14px;
+				height: 15px;
+				background-image: url(/static/img/sprite-icons.png);
+				&_facebook {
+					margin-top: 12px;
+					margin-left: 13px;
+					background-position: left -41px;
+				}
+				&_twitter {
+					margin-top: 12px;
+					margin-left: 14px;
+					background-position: -14px -41px;
+				}
+				&_linkedin {
+					margin-top: 11px;
+					margin-left: 13px;
+					background-position: -28px -41px;
+				}
+			}
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
+}
+.contact-box {
+	margin-top: 25px;
+	&__fence {
+		display: block;
+		float: left;
+		width: 1px;
+		height: 40px;
+		background-color: #393f4d;
+		margin-right: 44px;
+	}
+	&__icon {
+		display: block;
+		float: left;
+		width: 42px;
+		height: 41px;
+		background-image: url(/static/img/sprite-icons.png);
+		&_phone {
+			margin-top: -1px;
+			background-position: left top;
+		}
+		&_email {
+			margin-left: 6px;
+			background-position: -42px top;
+			margin-right: 8px;
+		}
+	}
+	&__cont {
+		margin-top: 12px;
+		margin-left: 11px;
+		display: block;
+		float: left;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 14px;
+		letter-spacing: .3px;
+		color: #393f4d;
+	}
+}
+.copy-line {
+	clear: both;
+	padding-top: 23px;
+	padding-bottom: 46px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: .3px;
+	color: #fff;
+	&__copyright {
+		float: left;
+	}
+	&__developed {
+		float: right;
+	}
+}
